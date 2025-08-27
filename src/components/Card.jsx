@@ -1,13 +1,18 @@
-import React from 'react'
-import "./Card.css"
+import React from "react";
+import "./Card.css";
+import { Link } from "react-router-dom";
 
-function Card() {
+function Card({
+  title = "Title for default",
+  description = "Description for default",
+}) {
   return (
-    <div className='Card'>
-        <h2>Tittle of Card</h2>
-        <p>Description of Card</p>
+    <div className="Card">
+      <Link to={title}>
+        <h2>{title}</h2>
+      </Link>
+      <p>{description}</p>
     </div>
-  )
+  );
 }
-
-export default Card
+export default Card;

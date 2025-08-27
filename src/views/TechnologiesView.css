@@ -1,0 +1,11 @@
+
+.TechnologiesView {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.TechnologiesView img {
+  display: block;
+  max-width: 100%;
+}
